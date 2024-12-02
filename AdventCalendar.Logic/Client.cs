@@ -17,6 +17,13 @@ namespace AdventCalendar.Logic
                     else
                         day1.RunPart2();
                     break;
+                case "2":
+                    var day2 = new Day2(_provider);
+                    if (part == "1")
+                        day2.RunPart1();
+                    else
+                        day2.RunPart2();
+                    break;
 
                 default: throw new Exception("");
             }
